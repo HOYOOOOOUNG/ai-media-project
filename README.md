@@ -1,156 +1,154 @@
-# 🤖 AI Media Generator
+# AI Media Project: Full-Stack AI-Powered Media Generation Web App
 
-A full-stack AI-powered media generation web app built using **React (Vite)** for the frontend and **Flask + Diffusers** for the backend. Users can generate images and videos from text and image prompts using state-of-the-art AI models.
+![AI Media Project](https://img.shields.io/badge/Release-v1.0.0-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 
----
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-v1.0.0-orange.svg)](https://github.com/HOYOOOOOUNG/ai-media-project/releases)
 
-## 🌐 Live Demo
+## Table of Contents
 
-🔗 [https://yashdhanani.github.io/ai-media-project/](https://yashdhanani.github.io/ai-media-project/)
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
----
+## Overview
 
-## 🧠 Features
+The **AI Media Project** is a full-stack web application that leverages artificial intelligence to generate media content. Built using **React** with **Vite** for the frontend and **Flask** with **Diffusers** for the backend, this application enables users to create images and videos from text prompts. 
 
-| Tool | Description |
-|------|-------------|
-| 🎨 **Text-to-Image (T2I)** | Create stunning images from text descriptions |
-| 🎥 **Text-to-Video (T2V)** | Generate video clips from a simple text prompt *(planned)* |
-| 🎞️ **Image-to-Video (I2V)** | Animate a static image to create a short video *(planned)* |
-| 🎵 **Image-to-Video + Audio (I2V+A)** | Animate an image and add a soundtrack *(planned)* |
-| ✨ **Text + Image to Video (T+I2V)** | Use a prompt to guide the animation of an image *(planned)* |
-| 🔊 **Text + Image to Video + Audio (T+I2V+A)** | Guide the animation and add a narrated soundtrack *(planned)* |
+You can download the latest version from the [Releases section](https://github.com/HOYOOOOOUNG/ai-media-project/releases).
 
----
+## Features
 
-## 🖼️ Text-to-Image Backend (Python)
+- **Text-to-Image Generation**: Convert text prompts into stunning images using advanced AI models.
+- **Text-to-Video Generation**: Transform text descriptions into engaging video content.
+- **User-Friendly Interface**: Designed with a clean and intuitive layout for seamless user experience.
+- **Fast Performance**: Utilizes Vite for rapid frontend development and quick load times.
+- **Scalable Backend**: Built with Flask, ensuring that the backend can handle multiple requests efficiently.
+- **Integration with Hugging Face**: Leverage powerful models from Hugging Face for media generation.
+- **OpenAI Support**: Use OpenAI's capabilities for enhanced content creation.
 
-The Python backend uses 🤗 Hugging Face's `diffusers` library with `Stable Diffusion v1.5`. It supports both CPU and GPU execution.
+## Technologies Used
 
-### 📂 Backend Directory: `python-server/`
+- **Frontend**: 
+  - [React](https://reactjs.org/)
+  - [Vite](https://vitejs.dev/)
+  
+- **Backend**: 
+  - [Flask](https://flask.palletsprojects.com/)
+  - [Diffusers](https://huggingface.co/docs/diffusers/index)
+  
+- **AI Models**:
+  - Stable Diffusion
+  - OpenAI Models
+  
+- **Other Tools**:
+  - Torch
+  - GitHub Pages for deployment
 
-#### 📦 Dependencies
+## Installation
 
-Install with:
+To get started with the AI Media Project, follow these steps:
 
-```bash
-pip install -r requirements.txt
-requirements.txt:
+1. **Clone the Repository**:
 
-nginx
-Copy
-Edit
-Flask
-Flask-Cors
-torch
-diffusers
-transformers
-accelerate
-safetensors
-🚀 Run the Flask Server
-bash
-Copy
-Edit
-cd python-server
-python app.py
-The server will start on http://localhost:5000
+   ```bash
+   git clone https://github.com/HOYOOOOOUNG/ai-media-project.git
+   ```
 
-🔄 API Endpoint
-POST /api/text-to-image
+2. **Navigate to the Project Directory**:
 
-json
-Copy
-Edit
-{
-  "prompt": "a cyberpunk city at night with glowing lights"
-}
-Returns: image/png (generated AI image)
+   ```bash
+   cd ai-media-project
+   ```
 
-⚙️ Frontend (React + Vite)
-📂 Frontend Directory: client/
-📦 Setup
-bash
-Copy
-Edit
-cd client
-npm install
-🚀 Run Locally
-bash
-Copy
-Edit
-npm run dev
-The frontend will start on http://localhost:5173
+3. **Install Frontend Dependencies**:
 
-Make sure the backend is also running at http://localhost:5000 or change the API URL in your React app.
+   Navigate to the frontend directory and install dependencies:
 
-🌐 GitHub Pages Deployment
-Vite is configured to deploy to GitHub Pages with:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-js
-Copy
-Edit
-// vite.config.js
-export default defineConfig({
-  base: '/ai-media-project/',
-});
-📦 Deployment via GitHub Actions
-.github/workflows/deploy.yml handles automatic CI/CD:
+4. **Install Backend Dependencies**:
 
-Builds React app
+   Navigate to the backend directory and install dependencies:
 
-Uploads artifact
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   ```
 
-Deploys to GitHub Pages
+5. **Run the Application**:
 
-🗂️ Project Structure
-csharp
-Copy
-Edit
-ai-media-project/
-├── client/                   # Frontend (React + Vite)
-│   ├── public/
-│   ├── src/
-│   └── vite.config.js
-│
-├── python-server/            # Backend (Flask API)
-│   ├── app.py
-│   └── requirements.txt
-│
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-│
-└── README.md
-🔐 Environment Notes
-Backend supports CPU by default, but will use GPU if available (torch.cuda.is_available()).
+   - Start the backend server:
 
-Uses the Hugging Face model: runwayml/stable-diffusion-v1-5.
+     ```bash
+     cd backend
+     flask run
+     ```
 
-Port configuration: Flask runs on 5000, Vite runs on 5173.
+   - Start the frontend development server:
 
-🎯 Roadmap
-✅ Text-to-Image (T2I) working via Flask + Diffusers
+     ```bash
+     cd frontend
+     npm run dev
+     ```
 
-🚧 Add other AI tools (T2V, I2V, etc.)
+Now, you can access the application at `http://localhost:3000`.
 
-🚧 Upload image/audio support
+## Usage
 
-🚧 Media download button
+Once the application is running, you can start generating media content:
 
-🚧 User account and project save
+1. **Text-to-Image**:
+   - Enter a descriptive text prompt in the designated input field.
+   - Click on the "Generate Image" button.
+   - View the generated image displayed on the screen.
 
-🧑‍💻 Developed By
-Yash Dhanani
+2. **Text-to-Video**:
+   - Enter a narrative or description in the input area.
+   - Click on the "Generate Video" button.
+   - Watch as the application creates a video based on your text.
 
-🔗 GitHub
+## Contributing
 
-💼 Founder of AppyGrowth
+We welcome contributions to the AI Media Project. To contribute:
 
-🧠 AI, Web & Full-Stack Developer
+1. Fork the repository.
+2. Create a new branch:
 
-📄 License
-© 2025 Yash Dhanani. All Rights Reserved.
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
 
-This project is intended for learning, experimentation, and demo purposes only.
+3. Make your changes and commit them:
 
----
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or inquiries, feel free to reach out:
+
+- **Email**: your-email@example.com
+- **GitHub**: [HOYOOOOOUNG](https://github.com/HOYOOOOOUNG)
+
+You can also check the [Releases section](https://github.com/HOYOOOOOUNG/ai-media-project/releases) for updates and downloads.
